@@ -1,0 +1,68 @@
+{
+  "available": true,
+  "checkpointable": false,
+  "defaultMemoryPerNode": 32,
+  "defaultProcessorsPerNode": 16,
+  "defaultMaxRunTime": "12:00:00",
+  "defaultNodeCount": 1,
+  "defaultQueue": "serial",
+  "deploymentPath": "jklynch/applications/imicrobe-puca-0.0.1/stampede",
+  "deploymentSystem": "data.iplantcollaborative.org",
+  "executionSystem": "tacc-stampede2-jklynch",
+  "executionType": "HPC",
+  "helpURI": "",
+  "label": "iMicrobe puca",
+  "longDescription": "iMicrobe Puca",
+  "modules": [],
+  "name": "imicrobe-puca",
+  "ontology": [
+    "http://sswapmeet.sswap.info/agave/apps/Application"
+  ],
+  "parallelism": "SERIAL",
+  "shortDescription": "iMicrobe Puca",
+  "tags": [
+    "puca",
+    "singularity"
+  ],
+  "templatePath": "template.sh",
+  "testPath": "test.sh",
+  "version": "0.0.1",
+  "inputs": [],
+  "parameters": [
+    {
+      "id": "SHUB_URL",
+      "value": {
+        "default": "",
+        "required": false,
+        "type": "string",
+        "visible": true
+      },
+      "semantics": {
+      },
+      "details": {
+        "argument": "",
+        "description": "Singularity Hub URL",
+        "label": "URL",
+        "showArgument": false
+      }
+    },
+    {
+      "id": "CMD_LINE",
+      "value": {
+        "default": "",
+        "required": false,
+        "type": "string",
+        "visible": true
+      },
+      "semantics": {
+      },
+      "details": {
+        "argument": "",
+        "description": "command line arguments",
+        "label": "command line arguments",
+        "showArgument": false
+      }
+    }
+  ],
+  "outputs": []
+}

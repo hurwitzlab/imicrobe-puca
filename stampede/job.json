@@ -1,0 +1,9 @@
+{
+  "name": "imicrobe-puca-test",
+  "appId": "imicrobe-puca-0.0.1",
+  "archive": true,
+  "parameters": {
+    "SH_URL": "shub://vsoch/hello-world",
+    "CMD_LINE": "vsoch-hello-world-master.simg"
+  }
+}
