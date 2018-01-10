@@ -1,4 +1,7 @@
-.git/
-.gitignore
-
-vsoch-hello-world-master.simg
+cache
+.DS_Store
+.idea
+.git*
+*.img*
+*.pyc
+__pycache__
