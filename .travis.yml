@@ -3,17 +3,10 @@ sudo: required
 dist: trusty
 before_install:
 - pwd
-- cd /tmp
-- sudo curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
-- sudo apt install -y nodejs
-- sudo npm uninstall --save node-uuid
-- sudo npm install --save uuid
-- sudo npm install -g elm
 install:
 - pwd
 - cd /home/travis/build/hurwitzlab/imicrobe-puca
-- curl -k -u ${AGAVE_CREDENTIALS} -d grant_type=client_credentials -d scope=PRODUCTION
-  https://agave.iplantc.org/token
+- curl -k -u ${AGAVE_CREDENTIALS} -d grant_type=client_credentials -d scope=PRODUCTION https://agave.iplantc.org/token
 script:
 - pwd
 - ls -l
