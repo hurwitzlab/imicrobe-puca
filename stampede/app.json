@@ -22,12 +22,39 @@
   "shortDescription": "iMicrobe Puca",
   "tags": [
     "puca",
-    "singularity"
+    "singularity",
+    "biocontainer"
   ],
   "templatePath": "template.sh",
   "testPath": "test.sh",
   "version": "0.0.1",
-  "inputs": [],
+  "inputs": [
+    {
+      "id":"inputDir",
+      "value":{
+        "default":"",
+        "order":0,
+        "required":true,
+        "validator":"",
+        "visible":true
+      },
+      "semantics":{
+        "ontology":[
+          "http://sswapmeet.sswap.info/mime/application/X-bam"
+        ],
+        "minCardinality":1,
+        "fileTypes":[
+          "raw-0"
+        ]
+      },
+      "details":{
+        "description":"",
+        "label":"Input Directory",
+        "argument":null,
+        "showArgument":false
+      }
+    }
+  ],
   "parameters": [
     {
       "id": "BC_NAME",
@@ -41,8 +68,8 @@
       },
       "details": {
         "argument": "",
-        "description": "Singularity Hub URL",
-        "label": "URL",
+        "description": "TACC BioContainer image file",
+        "label": "BioContainer file",
         "showArgument": false
       }
     },
