@@ -1,0 +1,22 @@
+language: c
+sudo: required
+dist: trusty
+before_install:
+- pwd
+- cd /tmp
+- sudo curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+- sudo apt install -y nodejs
+- sudo npm uninstall --save node-uuid
+- sudo npm install --save uuid
+- sudo npm install -g elm
+install:
+- pwd
+- cd /home/travis/build/hurwitzlab/imicrobe-puca
+- curl -k -u ${AGAVE_CREDENTIALS} -d grant_type=client_credentials -d scope=PRODUCTION
+  https://agave.iplantc.org/token
+script:
+- pwd
+- ls -l
+env:
+  global:
+    secure: gSPUXfwRocZO5gu7jCKKJA+o1KcuSR9CkUkOeKrD+2y3oX+s2eY/fi0zaWDv4V33aDgY+g9cezUJmwLIpzXeN/Zyf8l69U+4kg2zPq6VM5X9Ce1cUt6TtbzUryXbyaDZd4Izo8G42zsJf09gVOqEhjMuCgBam3KumwSA2r1j8CzhHXt0qWhaFP6XCfBOdBhk4nJMIG+Jeb+d00T+EqPO3Ue4CCpj7Ax9VKjMikCTILlwnIIxSFDaDPU07f6XZLC1yT49uCqAs9eVbuelZ+JV+j3kpIY2UshJMsHx/6/PeieafZKpvYxWRsOTNA9V0SxZ4UxUiKbQyuZTi8XH9uhgugCHJUFuiUlkYQ68yc6ZkBhYEowKghFvCLE40HPH8qunz52+e08pyDdlZOrazI51YaTAa1MRaSaZkMIylBwP6IfjjXtxEs3nZueonGEnZEHWnMzTdBXX3d5vZ/amkDyggO4ZhaLYdeqRAL259aDaFcW39gn3BPQbteuelpOSn66dt7xSo4s9qgsnzpt8GqUmAy7nQocRvt8y+RBmwj/1BCRc/8F16syT+jXoOXafUpOQ2laYzs6u7d/HIqlX5E6Df8sQR3slENyZ7gDVljKuALnJ5gYcIKx3/hbPvYrm7uHawafAtdcnMGGAMKx6zg/ja9WX1wRAUuKQmjYmuqLNpjo=
