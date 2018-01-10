@@ -8,7 +8,7 @@
   "defaultQueue": "serial",
   "deploymentPath": "jklynch/applications/imicrobe-puca-0.0.1/stampede",
   "deploymentSystem": "data.iplantcollaborative.org",
-  "executionSystem": "tacc-stampede2-jklynch",
+  "executionSystem": "tacc-stampede-jklynch",
   "executionType": "HPC",
   "helpURI": "",
   "label": "iMicrobe puca",
@@ -30,7 +30,7 @@
   "inputs": [],
   "parameters": [
     {
-      "id": "SHUB_URL",
+      "id": "BC_NAME",
       "value": {
         "default": "",
         "required": false,
