@@ -6,8 +6,8 @@ before_install:
 install:
 - pwd
 - cd /home/travis/build/hurwitzlab/imicrobe-puca
-- curl -k -u ${AGAVE_CREDENTIALS} -d grant_type=client_credentials -d scope=PRODUCTION https://agave.iplantc.org/token
 script:
+- curl -k -u ${AGAVE_CREDENTIALS} -d grant_type=client_credentials -d scope=PRODUCTION https://agave.iplantc.org/token
 - pwd
 - ls -l
 env:
