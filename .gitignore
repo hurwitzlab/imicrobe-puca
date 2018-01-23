@@ -1,1 +1,4 @@
+*.html
+*.xml
+*.ipynb
 .idea
