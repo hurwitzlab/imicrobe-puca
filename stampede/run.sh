@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # stampede can not load module tacc-singularity
-module load singularity
+module load tacc-singularity
 
 echo "iMicrobe Puca begin"
 echo "run.sh arguments:"
