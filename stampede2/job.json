@@ -1,6 +1,6 @@
 {
   "name": "imicrobe-puca-test",
-  "appId": "imicrobe-puca-0.0.1",
+  "appId": "imicrobe-puca-0.0.2",
   "archive": true,
   "inputs": {
     "inputDir": "test/imicrobe-puca"

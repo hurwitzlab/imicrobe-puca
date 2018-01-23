@@ -5,3 +5,5 @@ cache
 *.img*
 *.pyc
 __pycache__
+*.html
+*.xml
