@@ -46,6 +46,9 @@ lytic-rsync-dry-run:
 lytic-rsync:
 	rsync -arvzP --delete --exclude-from=rsync.exclude -e "ssh -A -t hpc ssh -A -t lytic" ./ :project/imicrobe/apps/imicrobe-puca
 
+lytic-rsync-direct:
+	rsync -arvzP --delete --exclude-from=rsync.exclude -e "ssh -A -t lytic" ./ :project/imicrobe/apps/imicrobe-puca
+
 stampede2-rsync-dry-run:
 	rsync -n -arvzP --delete --exclude-from=rsync.exclude -e "ssh -A -t stampede2" ./ :project/imicrobe/apps/imicrobe-puca
 

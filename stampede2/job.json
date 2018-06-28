@@ -3,7 +3,7 @@
   "appId": "imicrobe-puca-0.0.2",
   "archive": true,
   "inputs": {
-    "inputDir": "test/imicrobe-puca"
+    "inputDir": "jklynch/test/imicrobe-puca"
   },
   "parameters": {
     "BC_NAME": "samtools_1.6--0.img",
